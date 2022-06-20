@@ -1,1 +1,1 @@
-# Udacity---Manipulating-the-DOM
+# Udacity - Manipulating the DOM
