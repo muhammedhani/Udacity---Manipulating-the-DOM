@@ -81,6 +81,14 @@ for (let i of anchors) {
 	});
 }
 
+// For Responsiveness: add a class to demonstrate the navlist by clicking on the menu icon
+const menuIcon = document.getElementById('menu-icon');
+menuIcon.addEventListener('click', (evt) => {
+	evt.preventDefault();
+	const navbar = document.getElementsByClassName('navbar__menu');
+	navbar[0].classList.toggle('navbar__none');
+});
+
 /**
  * End Main Functions
  * Begin Events

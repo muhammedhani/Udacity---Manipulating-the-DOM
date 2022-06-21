@@ -17,9 +17,15 @@
 		<!-- HTML Follows BEM naming conventions 
   IDs are only used for sections to connect menu achors to sections -->
 		<header class="page__header">
-			<nav class="navbar__menu">
+			<!-- Menu icon -->
+			<a href="#" id="menu-icon">
+				<svg width="32px" height="32px" viewBox="0 0 24 24">
+					<path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"></path>
+				</svg>
+			</a>
+			<nav class="navbar__menu navbar__none">
 				<!-- Navigation starts as empty UL that will be populated with JS -->
-				<ul id="navbar__list"></ul>
+				<ul id="navbar__list" class="navbar__list_none"></ul>
 			</nav>
 		</header>
 		<main>

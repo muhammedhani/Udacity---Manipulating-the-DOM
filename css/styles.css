@@ -232,3 +232,35 @@ section.your-active-class .landing__container::after {
 		transform: rotate(360deg) translate(-1em) rotate(-360deg);
 	}
 }
+
+/* For Menu Icon */
+#menu-icon {
+	display: none;
+}
+
+/*
+Tip from webinar: read about mediaquery on w3schools
+https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+*/
+@media only screen and (max-width: 600px) {
+	/* For mobile phones */
+	#menu-icon {
+		display: block;
+		float: right;
+		transition: 0.55s;
+	}
+	#menu-icon:hover {
+		fill: white;
+		background-color: #333;
+	}
+	.navbar__none {
+		display: none;
+	}
+	.navbar__menu {
+		margin-top: 32px;
+	}
+	#navbar__list li {
+		display: block;
+		text-align: center;
+	}
+}
