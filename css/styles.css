@@ -233,6 +233,12 @@ section.your-active-class .landing__container::after {
 	}
 }
 
+/* My CSS */
+.navbar__menu .active-list-item {
+	background: #333;
+	color: #fff;
+	transition: ease 0.3s all;
+}
 /* For Menu Icon */
 #menu-icon {
 	display: none;

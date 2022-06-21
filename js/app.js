@@ -47,8 +47,11 @@ navList.appendChild(fragment);
 
 // Add class 'active' to section when near top of viewport
 const sections = document.getElementsByClassName('section');
+const listAnchors = navList.getElementsByTagName('a');
+console.log(listAnchors);
 setTimeout(() => {
-	document.addEventListener('scroll', () => {
+	window.addEventListener('scroll', () => {
+		// For Sections
 		for (let i of sections) {
 			let rect = i.getBoundingClientRect(); // Get the bounds of a section as a dictionary
 			let y = rect['y']; // Get the value of y-coordinate of the section
@@ -57,6 +60,17 @@ setTimeout(() => {
 				i.classList.add('your-active-class');
 			} else {
 				i.classList.remove('your-active-class');
+			}
+		}
+		// For Link Items (additional feature 1)
+		for (let i of listAnchors) {
+			let target = i.getAttribute('href');
+			target = target.substring(1, target.length + 1);
+			let targetSection = document.getElementById(target);
+			if (targetSection.classList.contains('your-active-class')) {
+				i.classList.add('active-list-item');
+			} else {
+				i.classList.remove('active-list-item');
 			}
 		}
 	});
