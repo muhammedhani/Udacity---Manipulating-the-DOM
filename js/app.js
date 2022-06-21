@@ -48,7 +48,6 @@ navList.appendChild(fragment);
 // Add class 'active' to section when near top of viewport
 const sections = document.getElementsByClassName('section');
 const listAnchors = navList.getElementsByTagName('a');
-console.log(listAnchors);
 setTimeout(() => {
 	window.addEventListener('scroll', () => {
 		// For Sections
