@@ -9,7 +9,7 @@
 ***
 
 ## The Page Behavior
-  - The navigation is built dynamically as an unordered list. Start with an empty `ul` and dynamically build navigation using `appendChild()`, `innerHTML`, and `createDocumentFragment`.
+  - The navigation is built dynamically as an unordered list. Start with an empty `ul` and dynamically build navigation using `appendChild()`, `innerHTML`, and `createDocumentFragment()`.
   - While scrolling, the shown section should be highlighted. In other words, add the class `your-acive-section` to the viewed section in the viewport. This is done using the `.getBoundingClientRect()`.
   - If you click on an item from the navigation menu, it should scroll (smoothly) to the target section. This can be achieved using any of the javascript scrolling functions: `scroll()`, `scrollTo()`, or `scrollIntoView()`. Notice that the event it self is of type `'click'`.
 ***
