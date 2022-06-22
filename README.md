@@ -37,4 +37,4 @@ No required dependencies.
 Muhammad Hani
 
 ## Credits:
-All credits goes to &copy; [Udacity](https://www.udacity.com/online-learning-for-individuals) development team. 
+All credits goes to [&copy;Udacity](https://www.udacity.com/online-learning-for-individuals) development team. 
