@@ -36,9 +36,10 @@
  */
 
 // build the nav
+const numberOfSections = document.getElementsByClassName('section').length;
 const navList = document.getElementById('navbar__list');
 let fragment = document.createDocumentFragment();
-for (let i = 1; i <= 4; i++) {
+for (let i = 1; i <= numberOfSections; i++) {
 	let listItem = document.createElement('li');
 	listItem.innerHTML = `<a href="#section${i}" class="menu__link">Section ${i}</a>`;
 	fragment.appendChild(listItem);
