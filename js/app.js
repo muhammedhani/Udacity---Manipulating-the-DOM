@@ -36,7 +36,7 @@
  */
 
 // build the nav
-const numberOfSections = document.getElementsByClassName('section').length;
+const numberOfSections = document.getElementsByClassName('section').length; // number of sections
 const navList = document.getElementById('navbar__list');
 let fragment = document.createDocumentFragment();
 for (let i = 1; i <= numberOfSections; i++) {
@@ -97,11 +97,13 @@ for (let i of anchors) {
 
 // For Responsiveness: add a class to demonstrate the navlist by clicking on the menu icon
 const menuIcon = document.getElementById('menu-icon');
-menuIcon.addEventListener('click', (evt) => {
-	evt.preventDefault();
-	const navbar = document.getElementsByClassName('navbar__menu');
-	navbar[0].classList.toggle('navbar__none');
-});
+setTimeout(() => {
+	menuIcon.addEventListener('click', (evt) => {
+		evt.preventDefault();
+		const navbar = document.getElementsByClassName('navbar__menu');
+		navbar[0].classList.toggle('navbar__none');
+	});
+}, 0);
 
 /**
  * End Main Functions
